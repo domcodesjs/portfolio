@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+
+header {
+  height: 8rem;
+  background: #000;
+  color: #fff;
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.intro {
+  background: #56ccf2;
+  height: 40rem;
+  padding: 0 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.intro h1 {
+  font-size: 3.2rem;
+  width: 60%;
+  letter-spacing: 0.15rem;
+  font-weight: 600;
+  line-height: 4rem;
+  text-align: center;
+}
+
+/* About */
+.about article {
+  margin-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.about article p {
+  width: 60%;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 300;
+}
+
+.about article ol {
+  width: 60%;
+}
+
+/* Footer */
+footer {
+  margin-top: 2.4rem;
+  width: 100%;
+  height: 6rem;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-left: 1.6rem;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
