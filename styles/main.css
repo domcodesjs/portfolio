@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 
+/* Make font size 10px so it's easier to use rem and border box for consistent spacing */
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -26,6 +27,7 @@ header {
   text-transform: uppercase;
 }
 
+/* Intro */
 .intro {
   background: #56ccf2;
   height: 40rem;
@@ -52,6 +54,12 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 0 4rem;
+}
+
+.about article img {
+  width: 20%;
+  border-radius: 100%;
+  margin: 3.2rem 0;
 }
 
 .about article p {
@@ -91,4 +99,8 @@ footer ul li {
 footer ul li a {
   color: #fff;
   text-decoration: none;
+}
+
+footer ul li a:visited {
+  color: purple;
 }
