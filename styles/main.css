@@ -27,24 +27,33 @@ header {
   text-transform: uppercase;
 }
 
+.wrapper {
+  width: 1140px;
+  margin: 0 auto;
+}
+
 /* Intro */
 .intro {
-  background: #56ccf2;
-  height: 40rem;
-  padding: 0 4rem;
+  background: url('../images/intro-bg.jpg') no-repeat;
+  background-size: 100% 100%;
+  height: 70rem;
+  /* padding: 0 4rem; */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
   color: #fff;
 }
 
 .intro h1 {
   font-size: 3.2rem;
-  width: 60%;
+  width: 40%;
   letter-spacing: 0.15rem;
   font-weight: 600;
   line-height: 4rem;
-  text-align: center;
+  text-align: left;
+  color: #000;
+  background: #fff;
+  margin: 0;
 }
 
 /* About */
