@@ -56,6 +56,11 @@ header {
   padding: 0 4rem;
 }
 
+.about article hr {
+  width: 4%;
+  margin-top: -1.6rem;
+}
+
 .about article img {
   width: 20%;
   border-radius: 100%;
