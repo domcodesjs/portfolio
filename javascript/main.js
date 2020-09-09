@@ -9,6 +9,16 @@ document.addEventListener('DOMContentLoaded', function () {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
+    if (
+      name.value.trim() === '' ||
+      email.value.trim() === '' ||
+      message.value.trim() === ''
+    ) {
+      return;
+    }
+
+    function success() {}
+
     fetch('https://formspree.io/moqkgpoz', {
       method: 'POST',
       headers: {
@@ -26,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
           name.value = '';
           email.value = '';
           message.value = '';
-          console.log(res);
         }
       })
       .catch((err) => console.log(err));
