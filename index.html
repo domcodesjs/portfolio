@@ -84,14 +84,14 @@
 
       <section class="contact">
         <h1>Contact</h1>
-        <form>
+        <form id="contact-form">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
+          <input type="text" id="name" name="name" required />
           <label for="email">Email</label>
-          <input type="text" id="email" name="email" />
+          <input type="email" id="email" name="email" required />
           <label for="message">Message</label>
-          <input type="textarea" id="message" name="message" />
-          <button>Submit</button>
+          <input type="textarea" id="message" name="message" required />
+          <button id="contact-form-submit" type="submit">Submit</button>
         </form>
         <div class="social-links">
           <ul>
@@ -102,5 +102,7 @@
         </div>
       </section>
     </div>
+
+    <script src="./javascript/main.js"></script>
   </body>
 </html>
