@@ -1,10 +1,10 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('contact-form');
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
+  let form = document.getElementById('contact-form');
+  let name = document.getElementById('name');
+  let email = document.getElementById('email');
+  let message = document.getElementById('message');
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -14,7 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ name, email, message }),
+      body: JSON.stringify({
+        name: name.value,
+        email: email.value,
+        message: message.value,
+      }),
     })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
