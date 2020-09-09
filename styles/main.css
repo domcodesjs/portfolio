@@ -17,6 +17,12 @@ body {
   font-size: 1.6rem;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 .wrapper {
   width: 117rem;
   margin: 0 auto;
@@ -69,6 +75,7 @@ header nav ul li a {
 
 .intro div h1 {
   margin: 0;
+  text-transform: uppercase;
 }
 
 .intro div p {
@@ -77,4 +84,57 @@ header nav ul li a {
   font-family: 'Spartan', sans-serif;
   font-weight: 700;
   margin: 0;
+}
+
+/* Portfolio */
+.portfolio {
+  margin-top: 12rem;
+}
+
+.portfolio h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.portfolio-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.4rem;
+  margin-top: 4rem;
+}
+
+.portfolio-projects h2 {
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  height: 40rem;
+}
+
+/* About */
+
+/* Contact */
+.contact {
+  margin-top: 12rem;
+  display: grid;
+  grid-template-areas:
+    'title title'
+    'form social'
+    'form social';
+}
+
+.contact h1 {
+  grid-area: title;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  grid-area: form;
+}
+
+.contact div {
+  grid-area: social;
 }
