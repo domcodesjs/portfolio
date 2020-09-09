@@ -89,7 +89,7 @@ header nav ul li a {
 
 /* Portfolio */
 .portfolio {
-  margin-top: 12rem;
+  margin-top: 18rem;
 }
 
 .portfolio h1 {
@@ -101,7 +101,7 @@ header nav ul li a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2.4rem;
-  margin-top: 4rem;
+  margin-top: 8rem;
 }
 
 .portfolio-projects h2 {
@@ -114,17 +114,39 @@ header nav ul li a {
 }
 
 /* About */
+.about {
+  margin-top: 18rem;
+}
+
+.about h1 {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.about-content div p {
+  margin: 0;
+}
+
+.about-content img {
+  width: 100%;
+  box-shadow: 16px -16px #b6864b;
+}
 
 /* Contact */
 .contact {
-  margin: 12rem 0;
+  margin-top: 18rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     'title title'
-    'form social'
-    'form social';
-  grid-gap: 4.8rem 2.4rem;
+    'form map'
+    'form map';
+  grid-gap: 8rem 2.4rem;
 }
 
 .contact h1 {
@@ -170,7 +192,7 @@ header nav ul li a {
 }
 
 .contact div {
-  grid-area: social;
+  grid-area: map;
 }
 
 .contact div ul {
@@ -184,3 +206,29 @@ header nav ul li a {
 .contact div ul li:not(:last-child) {
   margin-right: 1.6rem;
 }
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18rem;
+  margin-bottom: 4.8rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+footer ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Media Queries */
