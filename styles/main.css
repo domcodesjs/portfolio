@@ -4,6 +4,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -64,7 +65,7 @@ header nav ul li a {
 
 .intro img {
   width: 100%;
-  box-shadow: -16px -16px #7a6aff;
+  box-shadow: -16px -16px #37647a;
 }
 
 .intro div {
@@ -80,7 +81,7 @@ header nav ul li a {
 
 .intro div p {
   font-size: 2.4rem;
-  color: #5ca5a5;
+  color: #b6864b;
   font-family: 'Spartan', sans-serif;
   font-weight: 700;
   margin: 0;
@@ -116,12 +117,14 @@ header nav ul li a {
 
 /* Contact */
 .contact {
-  margin-top: 12rem;
+  margin: 12rem 0;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     'title title'
     'form social'
     'form social';
+  grid-gap: 4.8rem 2.4rem;
 }
 
 .contact h1 {
@@ -135,6 +138,49 @@ header nav ul li a {
   grid-area: form;
 }
 
+.contact form label {
+  margin-bottom: 0.8rem;
+}
+
+.contact form input {
+  height: 4rem;
+  margin-bottom: 1.6rem;
+  border-radius: 0.4rem;
+  outline: none;
+  border: 0.4px solid lightgray;
+}
+
+.contact form textarea {
+  height: 10rem;
+  resize: none;
+  border-radius: 0.4rem;
+  outline: none;
+  border: 0.4px solid lightgray;
+}
+
+.contact form button {
+  height: 4rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #37647a;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  margin-top: 3.2rem;
+}
+
 .contact div {
   grid-area: social;
+}
+
+.contact div ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.contact div ul li:not(:last-child) {
+  margin-right: 1.6rem;
 }
