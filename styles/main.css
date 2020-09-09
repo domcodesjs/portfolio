@@ -22,6 +22,32 @@ body {
   margin: 0 auto;
 }
 
+/* Header & Nav */
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li:not(:last-child) {
+  margin-right: 3.2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
 /* Intro */
 .intro {
   margin-top: 12rem;
