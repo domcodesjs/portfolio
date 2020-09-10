@@ -80,7 +80,7 @@ header nav ul li a {
 .intro div h1 {
   margin: 0;
   text-transform: uppercase;
-  color: #3a653a;
+  color: #92b070;
 }
 
 .intro div p {
@@ -139,7 +139,7 @@ header nav ul li a {
   height: 4.8rem;
   border: none;
   border-radius: 0.4rem;
-  background: #3a653a;
+  background: #92b070;
   color: #fff;
   outline: none;
   cursor: pointer;
@@ -220,7 +220,7 @@ header nav ul li a {
   height: 4rem;
   border: none;
   border-radius: 0.4rem;
-  background-color: #3a653a;
+  background-color: #92b070;
   cursor: pointer;
   outline: none;
   color: #fff;
@@ -274,7 +274,6 @@ footer ul li a {
 }
 
 /* Media Queries */
-/* 
 @media all and (max-width: 768px) {
   .wrapper {
     width: 60rem;
@@ -330,7 +329,7 @@ footer ul li a {
   footer {
     margin-top: 12rem;
   }
-} */
+}
 
 @media (max-width: 599px) {
   .wrapper {
@@ -489,9 +488,6 @@ footer ul li a {
 
   header {
     margin-top: 6rem;
-  }
-
-  .intro {
   }
 
   .portfolio {
