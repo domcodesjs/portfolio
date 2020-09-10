@@ -161,6 +161,7 @@ header nav ul li a {
 .about-content {
   display: grid;
   grid-template-columns: 60% 40%;
+  grid-gap: 0 2.4rem;
 }
 
 .about-content div p {

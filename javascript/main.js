@@ -17,8 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    function success() {}
-
     fetch('https://formspree.io/moqkgpoz', {
       method: 'POST',
       headers: {
