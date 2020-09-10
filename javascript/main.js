@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
         name.removeAttribute('disabled');
         email.removeAttribute('disabled');
         message.removeAttribute('disabled');
-        return submitBtn.removeAttribute('disabled');
+        submitBtn.removeAttribute('disabled');
+        return alert('Messsage sent!');
       })
       .catch((err) => console.log(err));
   });
