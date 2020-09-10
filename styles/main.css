@@ -216,6 +216,7 @@ header nav ul li a {
   border-radius: 0.4rem;
   outline: none;
   border: 0.4px solid lightgray;
+  padding-left: 1.6rem;
 }
 
 .contact form textarea {
@@ -224,6 +225,7 @@ header nav ul li a {
   border-radius: 0.4rem;
   outline: none;
   border: 0.4px solid lightgray;
+  padding: 1.6rem 0 0 1.6rem;
 }
 
 .contact form button {
