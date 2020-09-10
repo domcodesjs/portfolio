@@ -36,17 +36,30 @@ document.addEventListener('DOMContentLoaded', function () {
       }),
     })
       .then((res) => {
-        if (res.status === 200) {
-          name.value = '';
-          email.value = '';
-          message.value = '';
+        if (res.status !== 200) {
+          name.removeAttribute('disabled');
+          email.removeAttribute('disabled');
+          message.removeAttribute('disabled');
+          submitBtn.removeAttribute('disabled');
+          return alert('Something went wrong. Please send your message again.');
         }
+
+        name.value = '';
+        email.value = '';
+        message.value = '';
         name.removeAttribute('disabled');
         email.removeAttribute('disabled');
         message.removeAttribute('disabled');
         submitBtn.removeAttribute('disabled');
         return alert('Messsage sent!');
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        name.removeAttribute('disabled');
+        email.removeAttribute('disabled');
+        message.removeAttribute('disabled');
+        submitBtn.removeAttribute('disabled');
+        return alert('Something went wrong. Please send your message again.');
+      });
   });
 });
