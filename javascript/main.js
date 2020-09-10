@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const name = document.getElementById('name');
   const email = document.getElementById('email');
   const message = document.getElementById('message');
+  const submitBtn = document.getElementById('contact-form-submit');
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -16,6 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
     ) {
       return;
     }
+
+    submitBtn.disabled = true;
+    name.disabled = true;
+    email.disabled = true;
+    message.disabled = true;
 
     fetch('https://formspree.io/moqkgpoz', {
       method: 'POST',
@@ -35,6 +41,10 @@ document.addEventListener('DOMContentLoaded', function () {
           email.value = '';
           message.value = '';
         }
+        name.removeAttribute('disabled');
+        email.removeAttribute('disabled');
+        message.removeAttribute('disabled');
+        return submitBtn.removeAttribute('disabled');
       })
       .catch((err) => console.log(err));
   });
