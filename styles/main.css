@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 
 html {
   box-sizing: border-box;
@@ -13,14 +14,17 @@ html {
 }
 
 body {
-  font-family: 'Spartan', sans-serif;
-  font-size: 1.6rem;
+  /* font-family: 'Spartan', sans-serif; */
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Spartan', sans-serif;
+  /* font-family: 'Spartan', sans-serif; */
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
 
@@ -34,7 +38,7 @@ ul {
 }
 
 p {
-  line-height: 2.4rem;
+  line-height: 2.6rem;
 }
 
 .wrapper {
