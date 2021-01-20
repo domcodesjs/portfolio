@@ -36,6 +36,26 @@ a {
   text-decoration: none;
 }
 
+.back-btn {
+  position: absolute;
+  height: 32px;
+  background: #fff;
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  top: 16px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 1140px;
@@ -868,6 +888,7 @@ span {
   display: flex;
   justify-content: center;
   margin-top: 128px;
+  margin-bottom: 128px;
 }
 
 .invision-btn-end button {
@@ -886,41 +907,6 @@ span {
 /************** end mybox case study  **************/
 /*  */
 /*  */
-/* footer */
-footer {
-  background: var(--dark);
-  height: 64px;
-  margin-top: 128px;
-  width: 100%;
-}
-
-footer .footer-contents {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  height: 64px;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 1140px;
-}
-
-.copyright {
-  color: var(--light);
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.footer-link {
-  display: inline-block;
-  letter-spacing: 0.1rem;
-  margin-left: 64px;
-  text-transform: uppercase;
-}
-
-.footer-link a {
-  color: var(--gray);
-}
-/* end footer */
 /*  */
 /*  */
 /* media queries */
@@ -1449,22 +1435,6 @@ footer .footer-contents {
   /************** end mybox styles **************/
   /*  */
   /*  */
-  /* footer */
-  footer {
-    height: 80px;
-    margin-top: 64px;
-  }
-
-  footer .footer-contents {
-    height: 80px;
-    justify-content: space-evenly;
-    width: 320px;
-  }
-
-  .footer-link {
-    font-size: 0.8rem;
-    margin-left: 8px;
-  }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
@@ -1963,21 +1933,6 @@ footer .footer-contents {
   /******* end mybox case study *******/
   /*  */
   /*  */
-  /* footer */
-  footer {
-    height: 56px;
-    margin-top: 80px;
-  }
-
-  footer .footer-contents {
-    height: 56px;
-    width: 540px;
-  }
-
-  .footer-link {
-    font-size: 0.7rem;
-    margin-left: 1rem;
-  }
 
   .copyright {
     font-size: 0.7rem;
@@ -2476,29 +2431,6 @@ footer .footer-contents {
   /************** end mybox case study styles **************/
   /*  */
   /*  */
-  /************** footer styles **************/
-  /*  */
-  /*  */
-  /* footer  */
-  footer {
-    height: 48px;
-    margin-top: 64px;
-  }
-
-  footer .footer-contents {
-    font-size: 0.75rem;
-    height: 48px;
-    margin: 0 auto;
-    width: 720px;
-  }
-
-  .footer-link {
-    letter-spacing: 0.1rem;
-    margin-left: 16px;
-  }
-  /* end footer section */
-  /*  */
-  /*  */
 }
 
 @media (min-width: 1201px) {
@@ -2507,18 +2439,49 @@ footer .footer-contents {
   }
 }
 
-@media (max-height: 415px) {
-  .e-navbar nav {
-    font-size: 2rem;
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+  margin-bottom: 48px;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+footer ul li:not(:last-child) {
+  margin-right: 16px;
+}
+
+footer ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 180px;
+    margin-bottom: 48px;
   }
 
-  .e-navbar nav ul li:nth-child(5) {
-    font-size: 1rem;
-  }
-
-  .e-navbar nav ul li:nth-child(5) span {
-    font-size: 1rem;
+  footer ul {
     margin: 0;
-    padding: 0 4px;
   }
 }
