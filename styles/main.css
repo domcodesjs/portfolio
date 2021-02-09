@@ -123,9 +123,28 @@ header nav ul li a {
   margin-top: 8rem;
 }
 
-.project img {
+.project-img {
   width: 100%;
-  height: 20rem;
+  height: 40rem;
+  background-size: cover;
+  background-repeat: none;
+  background-position: top;
+}
+.project__img__one {
+  background-image: url(../images/coffeeroasters-screenshot.png);
+}
+.project__img__two {
+  background-image: url(../images/hand-me-downs.png);
+}
+.project__img__three {
+  background-image: url(../images/gsn.png);
+}
+.project__img__four {
+  background-image: url(../images/mybox.png);
+}
+
+.project__img__maker {
+  background-image: url(../images/maker.png);
 }
 
 .project h2 {
