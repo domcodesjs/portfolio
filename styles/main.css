@@ -44,6 +44,7 @@ p {
 a {
   text-decoration: none;
   font-weight: 500;
+  color: inherit;
 }
 
 .wrapper {
@@ -144,7 +145,7 @@ header nav ul li a {
 .project__img__three {
   background-image: url(../images/gsn.png);
 }
-.project__img__four {
+.project__img__mybox {
   background-image: url(../images/mybox.png);
 }
 
