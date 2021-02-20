@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
           email.removeAttribute('disabled');
           message.removeAttribute('disabled');
           submitBtn.removeAttribute('disabled');
-          return alert('Messsage sent!');
+          return alert('Message sent!');
         })
         .catch((err) => {
           console.log(err);
